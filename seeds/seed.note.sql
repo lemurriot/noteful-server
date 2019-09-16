@@ -1,0 +1,15 @@
+INSERT INTO note (note_title, content, folder_id) VALUES
+    ('First note!', 'No sound but the muted purring of the room where Case waited. A narrow wedge of light from a half-open service hatch framed a heap of discarded fiber optics and the chassis of a broken mirror bent.', 1),
+    ('New Phone', 'Helping marketers serve unmatched cross-phase personalized experiences at every step of the FirstSpriti Digital Experience Platform powers enterprise-class. Advanced machine learning-based.', 2),
+    ('Birthdays', 'So schreitet in dem engen Bretterhaus (Theater, Bühne) Den ganzen Kreis der Schöpfung aus, Und wandelt mit bedächtger Schnelle Vom Himmel durch die Welt zur Hölle! Vernunft fängt wieder an zu sprechen Und Hoffnung wieder an zu blühn;', 2),
+    ('Favorite Things', 'Slate grey blue black favorite things dl alala alala test 23 on the first of every month', 2),
+    ('Second note!', 'I think I could, if I shall fall right THROUGH the earth! I wonder what Latitude was, or Longitude either, but thought they were all locked; and when Alice had got so much into the way out of the water, and seemed to her that she had hurt the poor little thing sat down and cried. `Would YOU like cats if you could only see her.', 1),
+    ('New TV', 'It wont turn on but it will turn off.', 2),
+    ('Blues History', '1920s it all came to fruition', 3),
+    ('Country History', '1930s it all came to fruition', 3),
+    ('Electronica History', '1990s it all came to fruition', 3),
+    ('Funk History', '1970s it all came to fruition', 3),
+    ('Least Favorite Things', 'Slate grey blue black favorite things dl alala alala test 23 on the first of every month', 2),
+    ('Twilight Zone Episodes', 'You are entering the twilight zone', 5),
+    ('Movie ideas', 'A man walks into a bar...', 6),
+    ('App ideas', 'A app walks into a bar...', 6)
