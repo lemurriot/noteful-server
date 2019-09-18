@@ -8,8 +8,8 @@ const noteRouter = express.Router()
 
 const serializeNote = note => ({
     id: note.id,
-    title: xss(note.title),
-    date_modified: note.date_created,
+    note_title: xss(note.note_title),
+    date_modified: note.date_modified,
     folder_id: note.folder_id,
     content: xss(note.content)
 })
@@ -26,9 +26,9 @@ noteRouter
       .catch(next)
     })
     .post(jsonParser, (req, res, next) => {
-      const { title, folder_id, content } = req.body
+      const { note_title, folder_id, content } = req.body
       const newNote = {
-          title,
+          note_title,
           folder_id,
           content
       }
@@ -86,8 +86,8 @@ noteRouter
           .catch(next)
         })
         .patch(jsonParser, (req, res, next) => {
-          const { folder_id, title, content } = req.body
-          const fieldsToUpdate = { folder_id, title, content }
+          const { folder_id, note_title, content } = req.body
+          const fieldsToUpdate = { folder_id, note_title, content }
             const numberOfValues = Object.values(fieldsToUpdate).filter(Boolean).length
             if (numberOfValues === 0){
                 res.status(400).json({
@@ -105,3 +105,5 @@ noteRouter
             })
             .catch(next)
         })
+
+module.exports = noteRouter
