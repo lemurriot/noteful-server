@@ -5,6 +5,7 @@ const cors = require('cors')
 const helmet = require('helmet')
 const { NODE_ENV } = require('./config')
 const noteRouter = require('./note/note-router')
+const folderRouter = require('./folder/folder-router')
 
 const app = express()
 
@@ -17,6 +18,7 @@ app.use(helmet())
 app.use(cors())
 
 app.use('/api/note', noteRouter)
+app.use('/api/folder', folderRouter)
 
 app.get('/', (req, res) => {
   res.send('Hello, world!')
